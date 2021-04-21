@@ -68,7 +68,7 @@ import interior22x from './assets/interiors/interior-2@2x.jpg';
 
 import moreInfo1 from './assets/moreInfo/moreinfo1.jpg';
 import moreInfo2 from './assets/moreInfo/moreinfo2.jpg';
-// import moreInfo3 from './assets/moreInfo/moreinfo4.jgp';
+import moreInfo3 from './assets/moreInfo/moreinfo4.jpg';
 
 import surrounding1 from './assets/surroundings/surroundings-1.jpg';
 import surrounding12x from './assets/surroundings/surroundings-1@2x.jpg';
@@ -420,8 +420,8 @@ export default {
       },
       {
         ImgProps: {
-          src: moreInfo2,
-          srcSet: `${moreInfo2} 1x, ${moreInfo2} 2x`,
+          src: moreInfo3,
+          srcSet: `${moreInfo3} 1x, ${moreInfo3} 2x`,
         },
         title: 'Andrew has appeared as a guest on the Joe Rogan Experience',
         text:
