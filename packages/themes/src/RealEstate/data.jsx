@@ -61,6 +61,7 @@ import flagrant22 from './assets/interiors/flagrant22.jpg';
 import flagrant23 from './assets/interiors/flagrant23.jpg';
 import brilliant1 from './assets/interiors/brilliant1.jpg';
 import brilliant2 from './assets/interiors/brilliant2.jpg';
+
 import interior1 from './assets/interiors/interior-1.jpg';
 import interior2 from './assets/interiors/interior-2.jpg';
 import interior22x from './assets/interiors/interior-2@2x.jpg';
