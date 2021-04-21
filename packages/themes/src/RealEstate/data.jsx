@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'gatsby';
+
 import Ticket from '@pagerland/icons/src/line/Ticket';
 import StoreAlt from '@pagerland/icons/src/line/StoreAlt';
 import Store from '@pagerland/icons/src/line/Store';
@@ -36,6 +38,7 @@ import Icon from '@pagerland/common/src/components/Icon';
 import textToMultiline from '@pagerland/common/src/utils/textToMultiline';
 
 import * as Yup from 'yup';
+import concrete from './assets/concrete.jpg';
 import background from './assets/hero.jpg';
 import background2x from './assets/hero.jpg';
 
@@ -178,7 +181,8 @@ export default {
     ],
     actions: [
       {
-        href: '#',
+        as: Link,
+        to: '/tour',
         label: 'Get Tickets',
       },
     ],
@@ -218,7 +222,8 @@ export default {
       // },
     ],
     cta: {
-      to: 'about',
+      as: Link,
+      to: '/tour',
       children: 'View Tour',
     },
   },
@@ -795,6 +800,242 @@ export default {
         icon: Youtube,
         href: 'https://www.youtube.com/channel/UCLZc32yrTEMxH1ZO-6fKOzA',
         title: 'YouTube',
+      },
+    ],
+  },
+  navbaralt: {
+    actions: [
+      {
+        as: Link,
+        to: '/',
+        label: 'Return home',
+      },
+    ],
+  },
+  utilityheader: {
+    background: {
+      src: concrete,
+      srcSet: `${concrete} 1x, ${concrete} 2x`,
+      alt: 'Tour Dates',
+    },
+    title: 'Tour',
+    price: 'Dates',
+    features: [
+      // {
+      //   IconProps: {
+      //     icon: WebGrid,
+      //   },
+      //   title: '5 800 sq. ft.',
+      // },
+      // {
+      //   IconProps: {
+      //     icon: BedDouble,
+      //   },
+      //   title: '7 bedrooms',
+      // },
+      // {
+      //   IconProps: {
+      //     icon: Bath,
+      //   },
+      //   title: '4 bathrooms',
+      // },
+      // {
+      //   IconProps: {
+      //     icon: CarSideview,
+      //   },
+      //   title: '2 cars garage',
+      // },
+    ],
+    cta: {
+      to: 'about',
+      children: 'View Tour',
+    },
+  },
+  tourEvents: {
+    title: 'Tour Events',
+    events: [
+      {
+        ImgProps: {
+          src: event1,
+          srcSet: `${event1} 1x, ${event12x} 2x`,
+        },
+        LinkProps: {
+          as: 'a',
+          href: 'https://www.palmbeachimprov.com/events/42955',
+        },
+        title: 'West Palm Beach, FL',
+        price: 'April 23 & 24',
+        features: [
+          {
+            IconProps: {
+              icon: Ticket,
+            },
+            title: 'Sold Out',
+          },
+          {
+            IconProps: {
+              icon: Building,
+            },
+            title: 'Improv',
+          },
+        ],
+      },
+      {
+        ImgProps: {
+          src: event2,
+          srcSet: `${event2} 1x, ${event22x} 2x`,
+        },
+        LinkProps: {
+          as: 'a',
+          href: 'https://phoenix.standuplive.com/events/43028',
+        },
+        title: 'Phoenix, AZ',
+        price: 'May 7 & 8',
+        features: [
+          {
+            IconProps: {
+              icon: Ticket,
+            },
+            title: 'Availible',
+          },
+          {
+            IconProps: {
+              icon: Building,
+            },
+            title: 'Stand Up Live',
+          },
+        ],
+      },
+      {
+        ImgProps: {
+          src: event3,
+          srcSet: `${event3} 1x, ${event32x} 2x`,
+        },
+        LinkProps: {
+          as: 'a',
+          href:
+            'https://vb.funnybone.com/ShowDetails/e1965da5-8bac-43cc-a528-9084827bfd23/eaf5e248-1faf-437c-8832-2fb72fdee936/ANDREW_SCHULZ/Virginia_Beach_Funny_Bone',
+        },
+        title: 'Virginia Beach, VA',
+        price: 'May 28 & 29',
+        features: [
+          {
+            IconProps: {
+              icon: Ticket,
+            },
+            title: 'Sold Out',
+          },
+          {
+            IconProps: {
+              icon: Building,
+            },
+            title: 'Funny Bone',
+          },
+        ],
+      },
+      {
+        ImgProps: {
+          src: event2,
+          srcSet: `${event2} 1x, ${event22x} 2x`,
+        },
+        LinkProps: {
+          as: 'a',
+          href: 'https://www.palmbeachimprov.com/events/42955',
+        },
+        title: 'Orlando, FL',
+        price: 'June 4 & 5',
+        features: [
+          {
+            IconProps: {
+              icon: Ticket,
+            },
+            title: 'Sold Out',
+          },
+          {
+            IconProps: {
+              icon: Building,
+            },
+            title: 'Improv',
+          },
+        ],
+      },
+      {
+        ImgProps: {
+          src: event3,
+          srcSet: `${event3} 1x, ${event32x} 2x`,
+        },
+        LinkProps: {
+          as: 'a',
+          href: 'https://www.palmbeachimprov.com/events/42955',
+        },
+        title: 'St. Louis, MO',
+        price: 'June 18 & 19',
+        features: [
+          {
+            IconProps: {
+              icon: Ticket,
+            },
+            title: 'Sold Out',
+          },
+          {
+            IconProps: {
+              icon: Building,
+            },
+            title: 'Improv',
+          },
+        ],
+      },
+      {
+        ImgProps: {
+          src: event1,
+          srcSet: `${event1} 1x, ${event12x} 2x`,
+        },
+        LinkProps: {
+          as: 'a',
+          href: 'https://www.palmbeachimprov.com/events/42955',
+        },
+        title: 'San Antonio, TX',
+        price: 'June 25 & 26',
+        features: [
+          {
+            IconProps: {
+              icon: Ticket,
+            },
+            title: 'Sold Out',
+          },
+          {
+            IconProps: {
+              icon: Building,
+            },
+            title: 'Improv',
+          },
+        ],
+      },
+      {
+        ImgProps: {
+          src: event1,
+          srcSet: `${event1} 1x, ${event12x} 2x`,
+        },
+        LinkProps: {
+          as: 'a',
+          href: 'https://www.palmbeachimprov.com/events/42955',
+        },
+        title: 'Oklahoma City, OK',
+        price: 'July 9 & 10',
+        features: [
+          {
+            IconProps: {
+              icon: Ticket,
+            },
+            title: 'Sold Out',
+          },
+          {
+            IconProps: {
+              icon: Building,
+            },
+            title: 'Improv',
+          },
+        ],
       },
     ],
   },

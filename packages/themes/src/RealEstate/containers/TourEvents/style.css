@@ -1,0 +1,10 @@
+.card {
+  overflow: hidden;
+}
+.card:hover Img {
+  transform: scale(1.1) rotate(-1deg);
+}
+
+Img {
+  transition: all 0.2s ease-in-out 0s;
+}

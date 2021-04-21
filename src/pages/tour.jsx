@@ -5,16 +5,9 @@ import { Helmet } from 'react-helmet';
 
 import Theme, { theme } from '@pagerland/themes/src/RealEstate';
 import {
-  Navbar,
-  Welcome,
-  About,
-  Location,
-  Exterior,
-  Interior,
-  Surroundings,
-  Gallery,
-  Contact,
-  UpcomingEvents,
+  NavbarAlt,
+  UtilityHeader,
+  TourEvents,
   Footer,
 } from '@pagerland/themes/src/RealEstate/containers';
 
@@ -22,33 +15,28 @@ import preview from '@pagerland/themes/src/RealEstate/assets/preview.jpg';
 
 import SEO from '../components/SEO';
 
-const RealEstate = ({ url }) => (
+const Tour = ({ url }) => (
   <Theme>
     <Helmet>
       <link href={theme.typography.googleFont} rel="stylesheet" />
       <meta name="theme-color" content={theme.colors.primary} />
       <meta property="og:image" content={`${url}${preview}`} />
     </Helmet>
-    <SEO title="Home" />
+    <SEO title="Tour Dates" />
 
-    <Navbar />
-    <Welcome name="" />
-    <UpcomingEvents name="events" />
-    <Exterior name="about" />
-    <Interior name="podcasts" />
-    <Surroundings name="content" />
-    <Contact name="contact" />
-    {/* <Gallery name="gallery" /> */}
+    <NavbarAlt />
+    <UtilityHeader name="" />
+    <TourEvents name="events" />
     <Footer name="" />
   </Theme>
 );
 
-RealEstate.propTypes = {
+Tour.propTypes = {
   url: PropTypes.string,
 };
 
-RealEstate.defaultProps = {
-  url: 'https://andrewschulz.netlify.app/',
+Tour.defaultProps = {
+  url: 'https://andrewschulz.netlify.app/tour',
 };
 
-export default RealEstate;
+export default Tour;

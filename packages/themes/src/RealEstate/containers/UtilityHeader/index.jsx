@@ -19,7 +19,7 @@ import data from '../../data';
 
 import './style.css';
 
-const Welcome = ({
+const UtilityHeader = ({
   name,
   background,
   title,
@@ -39,47 +39,22 @@ const Welcome = ({
   FeatureTitleProps,
 }) => (
   <Box name={name} {...WrapperProps}>
-    <div class="glitch__img"></div>
-    <div class="glitch__img"></div>
-    <div class="glitch__img"></div>
-    <div class="glitch__img"></div>
-    <div class="glitch__img"></div>
+    <ParallaxBackground {...background} />
     <Box {...InnerProps}>
       <Container {...ContainerProps}>
         <Box {...CaptionProps}>
           <Fade bottom cascade duration={600}>
-            <h2 className="content__title" {...TitleProps}>
-              {title}
-            </h2>
-            <Typography {...PriceProps}>{price}</Typography>
-            <Grid {...GridProps}>
-              {features.map((feature, i) => (
-                <Box {...FeatureProps} key={i}>
-                  <Icon {...FeatureIconProps} {...feature.IconProps} />
-                  <Typography {...FeatureTitleProps}>{feature.title}</Typography>
-                </Box>
-              ))}
-            </Grid>
-            <Button {...CtaProps} {...cta} />
+            <Typography {...PriceProps}>
+              {title} <span className="accentTitle">{price}</span>
+            </Typography>
           </Fade>
         </Box>
-        {/* <div className="demo-2 imgloaded render">
-          <div class="content">
-            <div class="glitch">
-              <div class="glitch__img"></div>
-              <div class="glitch__img"></div>
-              <div class="glitch__img"></div>
-              <div class="glitch__img"></div>
-              <div class="glitch__img"></div>
-            </div>
-          </div>
-        </div> */}
       </Container>
     </Box>
   </Box>
 );
 
-Welcome.propTypes = {
+UtilityHeader.propTypes = {
   name: PropTypes.string.isRequired,
   WrapperProps: PropTypes.object,
   InnerProps: PropTypes.object,
@@ -104,11 +79,10 @@ Welcome.propTypes = {
   cta: PropTypes.object,
 };
 
-Welcome.defaultProps = {
+UtilityHeader.defaultProps = {
   WrapperProps: {
     pt: {
-      _: '0',
-      lg: '50%',
+      _: '40vh',
     },
     position: 'relative',
     zIndex: 1,
@@ -116,16 +90,15 @@ Welcome.defaultProps = {
   },
   InnerProps: {
     pt: {
-      _: 120,
+      _: 0,
       lg: 0,
     },
     pb: {
-      _: 80,
+      _: 0,
       lg: 0,
     },
     position: {
-      _: 'relative',
-      lg: 'absolute',
+      _: 'absolute',
     },
     left: 0,
     top: 0,
@@ -134,13 +107,14 @@ Welcome.defaultProps = {
     bg: 'rgba(0, 0, 0, 0.3)',
     zIndex: 2,
     minHeight: {
-      _: '80vh',
+      _: '40vh',
     },
   },
   ContainerProps: {
     display: 'flex',
     alignItems: 'center',
-    height: '100%',
+    justifyContent: 'center',
+    height: '40vh',
   },
   CaptionProps: {
     maxWidth: 544,
@@ -156,11 +130,17 @@ Welcome.defaultProps = {
     },
   },
   PriceProps: {
-    variant: 'h1',
+    as: 'header',
+    variant: 'header',
     color: 'brand',
     fontFamily: 'bebas, Bebas Neue',
+    fontSize: {
+      _: '11vh',
+      lg: '16vh',
+    },
   },
   CtaProps: {
+    as: Link,
     ...smoothLinkProps,
     mt: 2,
     variant: 'brand',
@@ -187,7 +167,7 @@ Welcome.defaultProps = {
     variant: 'h4',
     color: 'gray.6',
   },
-  ...data.welcome,
+  ...data.utilityheader,
 };
 
-export default Welcome;
+export default UtilityHeader;
