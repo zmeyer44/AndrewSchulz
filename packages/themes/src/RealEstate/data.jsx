@@ -59,8 +59,8 @@ import exterior22x from './assets/exteriors/exterior-2@2x.jpg';
 import flagrant21 from './assets/interiors/flagrant21.jpg';
 import flagrant22 from './assets/interiors/flagrant22.jpg';
 import flagrant23 from './assets/interiors/flagrant23.jpg';
-import brilliant1 from './assets/interiors/brilliant1.jpg';
-import brilliant2 from './assets/interiors/brilliant2.jpg';
+import brilliant1 from './assets/interiors/Brilliant1.jpg';
+import brilliant2 from './assets/interiors/Brilliant2.jpg';
 
 import interior1 from './assets/interiors/interior-1.jpg';
 import interior2 from './assets/interiors/interior-2.jpg';
@@ -68,7 +68,7 @@ import interior22x from './assets/interiors/interior-2@2x.jpg';
 
 import moreInfo1 from './assets/moreInfo/moreinfo1.jpg';
 import moreInfo2 from './assets/moreInfo/moreinfo2.jpg';
-import moreInfo3 from './assets/moreInfo/moreinfo3.jpg';
+import moreInfo3 from './assets/moreInfo/moreinfo3.JPG';
 
 import surrounding1 from './assets/surroundings/surroundings-1.jpg';
 import surrounding12x from './assets/surroundings/surroundings-1@2x.jpg';
