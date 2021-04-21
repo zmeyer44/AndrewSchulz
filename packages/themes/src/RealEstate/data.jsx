@@ -61,6 +61,7 @@ import flagrant22 from './assets/interiors/flagrant22.jpg';
 import flagrant23 from './assets/interiors/flagrant23.jpg';
 import brilliant1 from './assets/interiors/Brilliant1.jpg';
 import brilliant2 from './assets/interiors/Brilliant2.jpg';
+import brilliant3 from './assets/interiors/Brilliant3.jpg';
 
 import interior1 from './assets/interiors/interior-1.jpg';
 import interior2 from './assets/interiors/interior-2.jpg';
@@ -394,6 +395,10 @@ export default {
           {
             src: brilliant2,
             srcSet: `${brilliant2} 1x, ${brilliant2} 2x`,
+          },
+          {
+            src: brilliant3,
+            srcSet: `${brilliant3} 1x, ${brilliant3} 2x`,
           },
         ],
         title: 'Co-host of the Brilliant Idiots Podcast',

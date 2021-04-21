@@ -166,7 +166,7 @@ Welcome.defaultProps = {
     mt: 2,
     variant: 'brand',
     size: 'large',
-    fontFamily: 'bebas',
+    fontFamily: 'bebas, Bebas Neue',
   },
   GridProps: {
     mt: 4,

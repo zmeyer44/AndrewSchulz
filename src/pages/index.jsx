@@ -29,7 +29,7 @@ const RealEstate = ({ url }) => (
       <meta name="theme-color" content={theme.colors.primary} />
       <meta property="og:image" content={`${url}${preview}`} />
     </Helmet>
-    <SEO title="Andrew Schulz" />
+    <SEO title="Home" />
 
     <Navbar />
     <Welcome name="" />
