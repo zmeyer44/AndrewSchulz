@@ -149,7 +149,7 @@ Welcome.defaultProps = {
     as: 'h1',
     variant: 'h1',
     color: 'gray.6',
-    fontFamily: 'Bebas Neue',
+    fontFamily: 'bebas, Bebas Neue',
     fontSize: {
       _: '11vh',
       lg: '16vh !important',
@@ -158,7 +158,7 @@ Welcome.defaultProps = {
   PriceProps: {
     variant: 'h1',
     color: 'brand',
-    fontFamily: 'bebas',
+    fontFamily: 'bebas, Bebas Neue',
   },
   CtaProps: {
     as: Link,

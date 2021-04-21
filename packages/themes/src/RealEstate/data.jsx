@@ -423,7 +423,7 @@ export default {
           src: moreInfo3,
           srcSet: `${moreInfo3} 1x, ${moreInfo3} 2x`,
         },
-        title: 'Andrew has appeared as a guest on the Joe Rogan Experience',
+        title: 'Along with Jelly Roll, Andrew recently released a music video',
         text:
           'Curabitur porttitor ligula ut aliquam egestas. Fusce orci ipsum, gravida vel dapibus nec, interdum nec dui. Vestibulum sed porttitor est. Nullam sollicitudin, odio vel mattis bibendum, ligula nisl faucibus libero, vitae tempus dui orci in purus.',
         cta: {
@@ -437,7 +437,7 @@ export default {
           src: moreInfo2,
           srcSet: `${moreInfo2} 1x, ${moreInfo2} 2x`,
         },
-        title: 'Along with Jelly Roll, Andrew recently released a music video',
+        title: 'Andrew has appeared as a guest on the Joe Rogan Experience',
         text:
           'Curabitur porttitor ligula ut aliquam egestas. Fusce orci ipsum, gravida vel dapibus nec, interdum nec dui. Vestibulum sed porttitor est. Nullam sollicitudin, odio vel mattis bibendum, ligula nisl faucibus libero, vitae tempus dui orci in purus.',
         cta: {
@@ -609,7 +609,7 @@ export default {
       validationSchema: Yup.object({
         firstName: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
         email: Yup.string().email('Must be an email').required('Required'),
-        message: Yup.string().min(20, 'Must be at least 20 characters').required('Required'),
+        message: Yup.string().required('Required'),
       }),
       // eslint-disable-next-line no-undef
       onSubmit: (values, { setSubmitting, resetForm }) => {
