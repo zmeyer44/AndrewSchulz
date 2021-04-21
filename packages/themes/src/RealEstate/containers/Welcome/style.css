@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
   --color-text: #aaa;
   --color-bg: #000;
@@ -23,7 +25,7 @@
 
 .content__title {
   font-size: 11vh;
-  font-family: 'bebas';
+  font-family: 'Bebas Neue';
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 0;

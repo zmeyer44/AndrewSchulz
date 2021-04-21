@@ -149,7 +149,7 @@ Welcome.defaultProps = {
     as: 'h1',
     variant: 'h1',
     color: 'gray.6',
-    fontFamily: 'bebas',
+    fontFamily: 'Bebas Neue',
     fontSize: {
       _: '11vh',
       lg: '16vh !important',
