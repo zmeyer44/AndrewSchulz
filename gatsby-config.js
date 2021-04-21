@@ -2,9 +2,9 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: 'Pagerland Gatsby',
-    description: '',
-    author: 'Pagerland Team',
+    title: 'Andrew Schulz',
+    description: 'Stand Up comedian and podcast host',
+    author: 'Zach Meyer',
   },
   pathPrefix: process.env.GATSBY_APP_DIR || '',
   plugins: [

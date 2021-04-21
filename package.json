@@ -1,9 +1,9 @@
 {
-  "name": "@pagerland/gatsby",
+  "name": "andrew_schulz",
   "private": true,
   "description": "",
   "version": "1.0.0",
-  "author": "Pagerland Team",
+  "author": "Zach Meyer",
   "dependencies": {
     "babel-plugin-styled-components": "1.11.1",
     "gatsby": "2.24.67",
